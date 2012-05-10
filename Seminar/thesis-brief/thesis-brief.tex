@@ -1,0 +1,52 @@
+\documentclass{beamer}
+\usepackage[english,activeacute]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{tikz}
+
+\definecolor{red}{RGB}{255,0,0}
+\definecolor{green}{RGB}{0,255,0} 
+\definecolor{blue}{RGB}{0,0,255} 
+\definecolor{oran}{RGB}{255,93,0} 
+
+\newcommand{\blue}{\textcolor{blue}}
+\newcommand{\red}{\textcolor{red}}
+\newcommand{\green}{\textcolor{green}}
+\newcommand{\oran}{\textcolor{oran}}
+
+\usetheme[pageofpages=of,
+          alternativetitlepage=true,
+          titlepagelogo=img/cti_hpc-500,
+          watermark=,
+          watermarkheight=50px,
+          watermarkheightmult=1,
+          ]{Torino}
+
+\usecolortheme{nouvelle}
+\vspace{-0.5cm}
+\author[Cristián D. Maureira Fredes]
+       {\large Cristián D. Maureira Fredes\\
+        \normalsize \textcolor{gray}{cmaureir@hpc.cl}}
+\title[BH Integrator]
+      {\Huge Black hole dynamics integrator}
+\subtitle{
+      A quasi-keplerian N-body
+      gravitational system integration.
+     }
+\institute[UTFSM]
+          {Universidad Técnica\\
+           Federico Santa María}
+
+\begin{document}
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+\include{src/introduction}
+\include{src/problem}
+\include{src/proposal}
+\include{src/future_work}
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+\end{document}
